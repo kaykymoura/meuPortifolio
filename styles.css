@@ -42,6 +42,11 @@ h2.titulo span{
     color: #00FF08;
 }
 
+button:hover{
+    box-shadow: 0px 0px 8px #00ff08a3;
+    transform: scale(1.05);
+}
+
 /* ESTILO DO CABECALHO */
 header > .interface {
     display: flex;
@@ -76,10 +81,6 @@ header nav ul li{
 }
 
 
-.btn-contato button:hover{
-    box-shadow: 0px 0px 8px #00ff08a3;
-    transform: scale(1.05);
-}
 
 /* TOPO DO SITE */
 
@@ -162,11 +163,227 @@ section .especialidades{
 }
 
 /* ESTILO SOBRE */
-section .sobre{
-   padding: 40px 4%;
+section.sobre{
+   padding: 70px 4%;
 }
 
-section > .interface > .img-sobre{
-    width: 0px;
-    height: 0px;
+section.sobre .flex{
+    align-items: center;
+    gap: 250px;
+   
+}
+
+section.sobre .txt-sobre{
+    max-width: 600px;
+}
+
+.sobre .txt-sobre{
+    color: white;   
+}
+
+section.sobre .txt-sobre h2{
+    font-size: 38px;
+}
+
+section.sobre .txt-sobre p{
+    margin: 25px 0;
+    line-height: 28px;
+    font-size: 25px;
+}
+
+section.sobre .img-sobre img {
+    width: 330px; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00FF08;
+    display: block;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.github-icon {
+    color: black;
+
+.linkedin-icon {
+    color: black;
+}
+
+.google-icon {
+    color: black;
+}
+}
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #00FF08;
+}
+section.portfolio .flex{
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.588);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+    
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #00ff0847;
+}
+
+.logo-footer img {
+  width: 250px;   
+  height: auto;   
+}
+
+footer .flex{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.borda {
+    border-top: 2px solid #00FF08;
+}
+
+footer .line-footer p i{
+    color: #00FF08;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1020px) {
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+
+    section.topo-do-site .flex{
+        align-items: center;
+        justify-content: center;
+        gap: 4 0px;
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+        text-align: center;
+    }
+
+    .topo-do-site h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+    section.especialidades{
+        padding: 40px 8%;
+        text-align: center;
+    }
+
+    section.sobre{
+        padding: 80px 8%;
+        text-align: center;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    section.portfolio{
+        padding: 80px 8%;
+        box-shadow: 0 0 40px 10px #00FF08; ;
+    }
+
+    .img-port{
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+    .logo-footer img {
+        width: 270px;   
+    }
+
+    footer .flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    
+
+   
 }
