@@ -372,7 +372,7 @@ footer .line-footer p a{
     text-decoration: none;
 }
 
-/* MEDIA QUERIES OTIMIZADAS */
+/* MEDIA QUERIES RESPONSIVAS */
 @media screen and (max-width: 1020px) {
     /* Ajuste geral de flex */
     .flex{
